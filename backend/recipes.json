@@ -1,0 +1,80 @@
+[
+  {
+    "id": "3",
+    "name": "Masala Dosa",
+    "ingredients": "Rice, Urad Dal, Potato, Onion, Spices",
+    "photo": "masala-dosa.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Chole Bhature",
+    "ingredients": "Chickpeas, Flour, Spices",
+    "photo": "chole-bhature.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Butter Chicken",
+    "ingredients": "Chicken, Butter, Cream, Tomatoes",
+    "photo": "butter-chicken.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Idli",
+    "ingredients": "Rice, Urad Dal, Water",
+    "photo": "idli.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Sambar",
+    "ingredients": "Lentils, Tamarind, Vegetables, Spices",
+    "photo": "sambar.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Malai Kofta",
+    "ingredients": "Paneer, Potatoes, Cream, Spices",
+    "photo": "malai-kofta.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Gulab Jamun",
+    "ingredients": "Milk Solids, Flour, Sugar Syrup",
+    "photo": "gulab-jamun.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Chicken Korma",
+    "ingredients": "Chicken, Yogurt, Almonds, Spices",
+    "photo": "chicken-korma.jpg"
+  },
+  {
+    "id": "1729011898384",
+    "name": "egg omlete",
+    "ingredients": "egg, onion, chilli",
+    "photo": "egg.jpg"
+  },
+  {
+    "id": "1729053884255",
+    "name": "rasgulla",
+    "ingredients": "cottage cheese,sugar syrup, ",
+    "photo": "rasgulla.jpeg"
+  },
+  {
+    "id": "1729086623157",
+    "name": "chips",
+    "ingredients": "potato",
+    "photo": "chips.jpg"
+  },
+  {
+    "id": "1729087405979",
+    "name": "pasta",
+    "ingredients": "pasta",
+    "photo": "pasta.jpeg"
+  },
+  {
+    "id": "1758976589903",
+    "name": "Pav Bhaji",
+    "ingredients": "Pav, Tomatos, MDH Pav bhaji masala, butter (lots of)",
+    "photo": "pav-bhaji.jpg"
+  }
+]
