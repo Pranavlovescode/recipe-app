@@ -1,4 +1,45 @@
-# Getting Started with Create React App
+# Recipe App with AI-Generated Cooking Instructions
+
+A modern recipe application built with React and Express that provides AI-generated cooking instructions using Google's Gemini API.
+
+## Features
+
+- Browse a collection of delicious recipes
+- Add your own recipes to the collection
+- View detailed AI-generated cooking instructions
+- Mark recipes as favorites
+- Responsive design for desktop and mobile
+
+## AI Integration
+
+This application uses Google's Gemini API to generate detailed cooking instructions. See [README-AI-INTEGRATION.md](./README-AI-INTEGRATION.md) for more details on the AI integration.
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   cd backend
+   npm install
+   ```
+3. Create a `.env` file in the root directory with your Gemini API key:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   GEMINI_MODEL=gemini-pro
+   GEMINI_MAX_TOKENS=1024
+   ```
+4. Start the backend server:
+   ```
+   cd backend
+   node server.js
+   ```
+5. Start the frontend in a new terminal:
+   ```
+   npm start
+   ```
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

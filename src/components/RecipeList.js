@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './RecipeList.css'; // Importing custom CSS for the cards
+import RecipeModal from './RecipeModal'; // Import the RecipeModal component
 
 const RecipeList = ({ recipes, addToFavorites, removeFromFavorites, deleteRecipe }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Filter recipes based on the search term
   const filteredRecipes = recipes.filter((recipe) =>
@@ -51,12 +54,15 @@ const RecipeList = ({ recipes, addToFavorites, removeFromFavorites, deleteRecipe
       {/* Recipe Cards */}
       <div className="recipe-container">
         {filteredRecipes.map((recipe) => (
-          <div className="recipe-card" key={recipe.id}>
+          <div className="recipe-card" key={recipe.id} onClick={() => {
+            setSelectedRecipe(recipe);
+            setIsModalOpen(true);
+          }}>
             <img src={`images/${recipe.photo}`} alt={recipe.name} className="recipe-photo" />
             <div className="recipe-info">
               <h2 className="recipe-title">{recipe.name}</h2>
               <p className="recipe-ingredients">{recipe.ingredients}</p>
-              <div className="recipe-actions">
+              <div className="recipe-actions" onClick={e => e.stopPropagation()}>
                 <button
                   onClick={() => handleAddToFavorites(recipe)}
                   className="btn btn-add"
@@ -78,6 +84,13 @@ const RecipeList = ({ recipes, addToFavorites, removeFromFavorites, deleteRecipe
           </div>
         ))}
       </div>
+      
+      {/* Recipe Details Modal */}
+      <RecipeModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        recipe={selectedRecipe}
+      />
     </div>
   );
 };

@@ -4,5 +4,17 @@
     "name": "chips",
     "ingredients": "potato",
     "photo": "chips.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Butter Chicken",
+    "ingredients": "Chicken, Butter, Cream, Tomatoes",
+    "photo": "butter-chicken.jpg"
+  },
+  {
+    "id": "1758976589903",
+    "name": "Pav Bhaji",
+    "ingredients": "Pav, Tomatos, MDH Pav bhaji masala, butter (lots of)",
+    "photo": "pav-bhaji.jpg"
   }
 ]
